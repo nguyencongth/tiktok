@@ -8,6 +8,9 @@ import images from '~/assets/images';
 const cx = classNames.bind(styles);
 
 function Header() {
+    const handleFocusSearchBtn = (e) => {
+        e.stopPropagation();
+    };
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -20,7 +23,7 @@ function Header() {
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                     <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
-                    <button className={cx('search-btn')}>
+                    <button className={cx('search-btn')} onFocus={handleFocusSearchBtn}>
                         <FontAwesomeIcon icon={faSearch} />
                     </button>
                 </div>
