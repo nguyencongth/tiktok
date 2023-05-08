@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     align-items: center;
-    padding: 6px 16px;
+    padding: 9px 16px;
     cursor: pointer;
 
     &:hover {
@@ -17,6 +17,7 @@
 .info {
     flex: 1;
     margin-left: 12px;
+    line-height: 1;
 }
 .name {
     font-size: 1.6rem;
